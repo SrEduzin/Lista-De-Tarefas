@@ -9,7 +9,6 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #ececec;
-    overflow-y: hidden;
 }
 
 .cabeca {
@@ -77,6 +76,8 @@ main {
     width: 100%;
     box-shadow: 0 0 28px rgb(189, 189, 189);
     margin-bottom: 1%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .item.clicado {
@@ -174,6 +175,42 @@ main {
 
     .item-nome {
         flex: 55%;
+        font-size: 20px;
+        cursor: pointer;
+        /* border: 2px solid rgb(18, 50, 136); */
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    input {
+        height: 80px;
+        font-size: 30px;
+        padding-left: 5%;
+    }
+
+    button.add {
+        font-size: 11px;
+        height: 80px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .item {
+        height: 80px;
+        width: 100%;
+        box-shadow: 0 0 28px rgb(189, 189, 189);
+        margin-bottom: 2%;
+    }
+
+    .delete {
+        font-size: 15px;
+        padding: 8px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .item-nome {
+        flex: 53%;
         font-size: 20px;
         cursor: pointer;
         /* border: 2px solid rgb(18, 50, 136); */

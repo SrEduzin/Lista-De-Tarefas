@@ -13,7 +13,7 @@ function addtarefa() {
             <i id="icon_${count}" class="material-icons">
                 radio_button_unchecked</i>
         </div>
-        <div onclick="marcarTarefa(${count})" class="item-nome">
+        <div class="item-nome">
             ${valorInput}
         </div>
         <div class="item-botao">
